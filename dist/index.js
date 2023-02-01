@@ -28,10 +28,12 @@ function displayMovieList(movies) {
     let movieListItem = document.createElement("div");
     movieListItem.dataset.id = movies[index].imdbID;
     movieListItem.classList.add("search-list-item");
-    if (movies[index].Poster != "N/A") moviePoster = movies[index].Poster;
-    else moviePoster = "image_not_found.png";
+    if (movies[index].Poster != "N/A") {
+      moviePoster = movies[index].Poster;
+    } else {
+      moviePoster = "image_not_found.png";
 
-    movieListItem.innerHTML = `
+      movieListItem.innerHTML = `
       <div class="search-item-thumbnail">
         <img
           class="mx-2"
@@ -45,7 +47,8 @@ function displayMovieList(movies) {
       </div>
     </div>
         `;
-    searchList.appendChild(movieListItem);
+      searchList.appendChild(movieListItem);
+    }
   }
   loadMovieDetails();
 }
