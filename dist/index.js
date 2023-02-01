@@ -32,7 +32,6 @@ function displayMovieList(movies) {
     else moviePoster = "image_not_found.png";
 
     movieListItem.innerHTML = `
-    <div class="search-list-item">
       <div class="search-item-thumbnail">
         <img
           class="mx-2"
