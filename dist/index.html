@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App Website</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="wrapper bg-slate-400">
+      <!-- section Search -->
+      <div class="search-container">
+        <div
+          class="search-element pt-4 items-center justify-center flex flex-col"
+        >
+          <h3 class="items-center mr-[1rem] text-xl font-bold mb-[1,5rem] mt-3">
+            Search Movie
+          </h3>
+          <div class="mt-2 xl:w-[330px]">
+            <div
+              class="input-group relative flex flex-wrap items-stretch w-full mb-2 rounded"
+            >
+              <input
+                type="search"
+                class="form-control relative flex-auto min-w-0 block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="button-addon2"
+                id="movie-search-box"
+                onkeyup="findMovies()"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="search-list flex flex-wrap justify-start items-stretch"
+          id="search-list"
+        >
+          <!-- list -->
+          <!-- 
+          <div class="search-list-item">
+            <div class="search-item-thumbnail">
+              <img
+                class="mx-2"
+                src="/img/Kingsman_The_Secret_Service_poster.jpg"
+                width="250px"
+              />
+              <div class="search-item-info overflow-auto">
+                <h3>Kingsman The Secret Service poster</h3>
+                <p>2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="search-list-item">
+            <div class="search-item-thumbnail">
+              <img
+                class="mx-2"
+                src="/img/Kingsman_The_Secret_Service_poster.jpg"
+                width="250px"
+              />
+              <div class="search-item-info overflow-auto">
+                <h3>Kingsman The Secret Service poster</h3>
+                <p>2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="search-list-item">
+            <div class="search-item-thumbnail">
+              <img
+                class="mx-2"
+                src="/img/Kingsman_The_Secret_Service_poster.jpg"
+                width="250px"
+              />
+              <div class="search-item-info overflow-auto">
+                <h3>Kingsman The Secret Service poster</h3>
+                <p>2020</p>
+              </div>
+            </div>
+          </div>
+          <div class="search-list-item">
+            <div class="search-item-thumbnail">
+              <img
+                class="mx-2"
+                src="/img/Kingsman_The_Secret_Service_poster.jpg"
+                width="250px"
+              />
+              <div class="search-item-info overflow-auto">
+                <h3>Kingsman The Secret Service poster</h3>
+                <p>2020</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- end of section Search -->
+
+      <!-- result container -->
+      <div
+        class="container max-w-full mt-16 flex flex-wrap items-center justify-center"
+      >
+        <div class="result-container">
+          <div class="result-grid flex" id="result-grid">
+            <!-- movie information here -->
+            <!-- <div class="movie-poster">
+              <img src="/img/Kingsman_The_Secret_Service_poster.jpg" alt="" />
+            </div>
+            <div class="movie-info ml-8">
+              <h3 class="movie-title text-xl font-bold">
+                Kingsman The Secret Service poster
+              </h3>
+              <ul class="movie-misc-info flex my-3">
+                <li class="year">year: 2022</li>
+                <li class="rated bg-yellow-300 rounded px-2 mx-3">
+                  Ratings: PG-13
+                </li>
+                <li class="released">Released: 5 mei 2022</li>
+              </ul>
+              <p class="genre my-3"><b>Genre:</b> Action, Adventure, Comedi</p>
+              <p class="writer my-3"><b>Writer:</b> James gunn, Don Abnet</p>
+              <p class="actors my-3"><b>Actors:</b> Chris prat</p>
+              <p class="plot my-3">
+                <b>Plot:</b> Lorem ipsum dolor, sit amet consectetur adipisicing
+              </p>
+              <p class="language my-3"><b>Language:</b> English</p>
+              <p class="awards my-3"><b>Awards:</b> Lorem, ipsum.</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <!-- end of result container -->
+    </div>
+    <script src="/dist/index.js"></script>
+  </body>
+</html>
